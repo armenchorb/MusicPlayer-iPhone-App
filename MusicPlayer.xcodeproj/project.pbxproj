@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		037FA76D20F06CC100FACF17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FA76C20F06CC100FACF17 /* AppDelegate.swift */; };
-		037FA76F20F06CC100FACF17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FA76E20F06CC100FACF17 /* ViewController.swift */; };
 		037FA77220F06CC100FACF17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037FA77020F06CC100FACF17 /* Main.storyboard */; };
 		037FA77420F06CC400FACF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037FA77320F06CC400FACF17 /* Assets.xcassets */; };
 		037FA77720F06CC400FACF17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037FA77520F06CC400FACF17 /* LaunchScreen.storyboard */; };
 		037FA78220F06CC500FACF17 /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FA78120F06CC500FACF17 /* MusicPlayerTests.swift */; };
 		037FA78D20F06CC500FACF17 /* MusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FA78C20F06CC500FACF17 /* MusicPlayerUITests.swift */; };
+		037FA79B20F06D2800FACF17 /* GenreButtonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037FA79A20F06D2800FACF17 /* GenreButtonScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		037FA76920F06CC100FACF17 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		037FA76C20F06CC100FACF17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		037FA76E20F06CC100FACF17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		037FA77120F06CC100FACF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		037FA77320F06CC400FACF17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		037FA77620F06CC400FACF17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		037FA78820F06CC500FACF17 /* MusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		037FA78C20F06CC500FACF17 /* MusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerUITests.swift; sourceTree = "<group>"; };
 		037FA78E20F06CC500FACF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037FA79A20F06D2800FACF17 /* GenreButtonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				037FA76C20F06CC100FACF17 /* AppDelegate.swift */,
-				037FA76E20F06CC100FACF17 /* ViewController.swift */,
+				037FA79A20F06D2800FACF17 /* GenreButtonScreen.swift */,
 				037FA77020F06CC100FACF17 /* Main.storyboard */,
 				037FA77320F06CC400FACF17 /* Assets.xcassets */,
 				037FA77520F06CC400FACF17 /* LaunchScreen.storyboard */,
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				037FA76F20F06CC100FACF17 /* ViewController.swift in Sources */,
 				037FA76D20F06CC100FACF17 /* AppDelegate.swift in Sources */,
+				037FA79B20F06D2800FACF17 /* GenreButtonScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9S69L46JYH;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.armenchorb.MusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9S69L46JYH;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.armenchorb.MusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
